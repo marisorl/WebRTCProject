@@ -115,7 +115,7 @@ function handleUserMediaError(error){
         console.log('navigator.getUserMedia error: ', error);
 }
   
-// 1. Server-->Client...
+// 1. Server-->Client....
 
 // 'created' or 'empty' message coming back from server:
 // this peer is the initiator
