@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>WebRTC Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/main.css">
+        
+        
+    </head>
+    <body>
+        <h1>Maria's WebRTC Application</h1>  
+        <div id="room">
+        <input id="room-name" type="text" placeholder="Room name" />
+        <button id="startButton">Start</button>
+        <button id="joinButton">Join</button>
+        </div>
+        
+        <div id="videos">
+        <video id="localVideo" width="320" height="240" autoplay></video>
+        <video id="remoteVideo" width="320" height="240" autoplay></video>
+        </div>
+        <!--
+        <div id="video-buttons">
+        <button id="startButton">Start</button>
+        <button id="callButton">Call</button>
+        <button id="hangupButton">Hang Up</button>
+        </div>
+        
+        <div id="text-area">
+        <textarea rows="4" cols="60" id="dataChannelSend" disabled
+                  placeholder="This will be enabled once the data channel is up..."></textarea>
+        <textarea rows="4" cols="60" id="dataChannelReceive" disabled></textarea>
+        </div>
+        
+        <button id="sendButton" disabled>Send</button>
+        
+        <!--
+        <div id="text-button">
+            <button id="startBtn">Start</button>
+            <button id="sendBtn">Send</button>
+            <button id="closeBtn">Stop</button>
+        </div>                   
+        -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/adapter.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
